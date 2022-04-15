@@ -16,7 +16,7 @@ function Questionaire({ question, checkAnswer }) {
       <div className="grid grid-cols-2 mt-4">
         {shuffledAnswers.map((answer) => (
           <button
-            className="border-2 border-slate-800 p-4 m-1 hover:bg-slate-800 active:bg-slate-300 active:text-black"
+            className="border-2 border-gray-800 p-4 m-1 hover:bg-gray-800  active:bg-gray-300 active:text-black"
             dangerouslySetInnerHTML={{ __html: answer }}
             onClick={() => checkAnswer(answer)}
           />
